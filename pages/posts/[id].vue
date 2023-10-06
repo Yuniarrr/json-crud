@@ -1,10 +1,10 @@
 <template>
-  <div class="m-5 flex flex-col items-start justify-center gap-5">
+  <div class="flex flex-col items-start justify-center gap-5 m-5">
     <NuxtLayout name="breadcrumb" />
 
     <!-- card start -->
     <div
-      class="w-full lg:w-1/3 p-4 text-center self-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700"
+      class="self-center w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow lg:w-1/3 sm:p-8 dark:bg-gray-800 dark:border-gray-700"
     >
       <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
         {{ post.title }}
@@ -16,7 +16,7 @@
         class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4"
       >
         <!-- edit button -->
-        <card-icon title="Edit">
+        <card-icon title="Edit" @click="store.editContentAlert(post.id)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

@@ -2,7 +2,7 @@
   <div class="custom-loader"></div>
 </template>
 
-<style>
+<style scoped>
 .custom-loader {
   width: 50px;
   height: 50px;

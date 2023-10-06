@@ -1,6 +1,6 @@
 <template>
-  <div class="container flex flex-col justify-between items-center min-h-screen">
-    <nav class="bg-white border-gray-200 shadow-md dark:bg-gray-900 w-full">
+  <div class="container flex flex-col items-center justify-between min-h-screen">
+    <nav class="w-full bg-white border-gray-200 shadow-md dark:bg-gray-900">
       <div
         class="flex flex-wrap items-center justify-between max-w-screen-xl p-5 mx-auto"
       >
@@ -15,9 +15,9 @@
             <li>
               <MenuItems href="/" title="Home" />
             </li>
-            <li>
+            <!-- <li>
               <MenuItems href="/refs" title="Refs" />
-            </li>
+            </li> -->
             <li>
               <MenuItems href="/about" title="About" />
             </li>
@@ -26,7 +26,7 @@
       </div>
     </nav>
 
-    <div class="w-full flex-1">
+    <div class="flex-1 w-full">
       <!-- <Loader v-if="store.loading" /> -->
       <slot />
     </div>
